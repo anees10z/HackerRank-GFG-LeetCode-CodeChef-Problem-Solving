@@ -1,4 +1,4 @@
-# Employee Salaries
+# Revising Aggregations - Averages
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -21,17 +21,12 @@ The **CITY** table is described as follows:
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-16T06:11:44.096Z  
+**Submitted:** 2026-11-16T06:14:18.180Z  
 
 ```sql
-/*
-Enter your query here.
-*/
-
-SELECT name FROM Employee
-WHERE salary > 2000
-AND months < 10
-ORDER BY employee_id;
+SELECT AVG(POPULATION)
+FROM CITY
+WHERE DISTRICT = 'California';
 
 ```
 
