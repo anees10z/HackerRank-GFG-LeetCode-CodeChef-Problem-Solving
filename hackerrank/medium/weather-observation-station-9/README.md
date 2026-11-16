@@ -1,4 +1,4 @@
-# Weather Observation Station 8
+# Weather Observation Station 9
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -21,46 +21,15 @@ where *LAT\_N* is the northern latitude and *LONG\_W* is the western longitude.
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-16T05:51:42.724Z  
+**Submitted:** 2026-11-16T05:54:40.265Z  
 
 ```sql
 /*
 Enter your query here.
 */
-
 SELECT DISTINCT CITY
 FROM STATION
-WHERE LOWER(LEFT(CITY, 1)) IN ('a', 'e', 'i', 'o', 'u')
-  AND LOWER(RIGHT(CITY, 1)) IN ('a', 'e', 'i', 'o', 'u');
-
--- SELECT DISTINCT CITY
--- FROM STATION
--- WHERE
--- CITY LIKE 'a%a'
--- or CITY LIKE 'a%e'
--- or CITY LIKE 'a%i'
--- or CITY LIKE 'a%o'
--- or CITY LIKE 'a%u'
--- or CITY LIKE 'e%a'
--- or CITY LIKE 'e%e'
--- or CITY LIKE 'e%i'
--- or CITY LIKE 'e%o'
--- or CITY LIKE 'e%u'
--- or CITY LIKE 'i%a'
--- or CITY LIKE 'i%e'
--- or CITY LIKE 'i%i'
--- or CITY LIKE 'i%o'
--- or CITY LIKE 'i%u'
--- or CITY LIKE 'o%a'
--- or CITY LIKE 'o%e'
--- or CITY LIKE 'o%i'
--- or CITY LIKE 'o%o'
--- or CITY LIKE 'o%u'
--- or CITY LIKE 'u%a'
--- or CITY LIKE 'u%e'
--- or CITY LIKE 'u%i'
--- or CITY LIKE 'u%o'
--- or CITY LIKE 'u%u';
+WHERE LEFT(CITY, 1) NOT IN ('a','e','i','o','u');
 
 ```
 
