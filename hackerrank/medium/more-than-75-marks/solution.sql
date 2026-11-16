@@ -1,9 +1,7 @@
 /*
 Enter your query here.
 */
-SELECT DISTINCT CITY 
-FROM STATION
-WHERE
-LEFT(CITY, 1) NOT IN ('a','e','i','o','u')
-AND
-RIGHT(CITY, 1) NOT IN ('a','e','i','o','u');
+SELECT NAME 
+FROM STUDENTS
+WHERE MARKS > 75
+ORDER BY RIGHT(NAME, 3), ID ASC;
