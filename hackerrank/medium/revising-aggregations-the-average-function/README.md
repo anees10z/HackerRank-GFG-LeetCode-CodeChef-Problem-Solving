@@ -21,7 +21,7 @@ The **CITY** table is described as follows:
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-16T06:14:18.180Z  
+**Submitted:** 2026-11-16T06:14:27.883Z  
 
 ```sql
 SELECT AVG(POPULATION)
