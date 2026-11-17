@@ -105,28 +105,14 @@ In the Sales department:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 940 ms (beats 87.04%)  
+**Runtime:** 1009 ms (beats 76.23%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-11-17T13:30:55.870Z  
+**Submitted:** 2026-11-17T13:32:10.859Z  
 
 ```sql
 # Write your MySQL query statement below
 
---  using CTE and Window function
--- with cte as (
---     select
---         d.name as Department,
---         e.name as Employee,
---         e.salary as Salary,
---         dense_rank() over(partition by e.departmentId order by salary desc) as rnk
---     from Employee as e
---     left join Department as d
---     on e.departmentId = d.id
--- )
-
--- select Department, Employee, Salary
--- from cte 
--- where rnk = 1 or rnk = 2 or rnk = 3;
+# using SubQueries + window function
 SELECT
     d.name AS Department,
     ranked.Employee,
@@ -145,6 +131,24 @@ FROM (
 LEFT JOIN Department AS d
     ON ranked.departmentId = d.id
 WHERE ranked.rnk <= 3;
+
+# using CTE and Window function
+-- with cte as (
+--     select
+--         d.name as Department,
+--         e.name as Employee,
+--         e.salary as Salary,
+--         dense_rank() over(partition by e.departmentId order by salary desc) as rnk
+--     from Employee as e
+--     left join Department as d
+--     on e.departmentId = d.id
+-- )
+
+-- select Department, Employee, Salary
+-- from cte 
+-- where rnk = 1 or rnk = 2 or rnk = 3;
+
+
 ```
 
 ---
