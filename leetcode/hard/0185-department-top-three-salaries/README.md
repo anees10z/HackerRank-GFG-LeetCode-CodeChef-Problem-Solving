@@ -105,9 +105,9 @@ In the Sales department:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 968 ms (beats 82.54%)  
+**Runtime:** 1720 ms (beats 10.69%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-11-17T13:32:18.252Z  
+**Submitted:** 2026-11-17T13:32:37.926Z  
 
 ```sql
 # Write your MySQL query statement below
