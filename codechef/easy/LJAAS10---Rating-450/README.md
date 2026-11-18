@@ -13,7 +13,7 @@ Print  **"Learn Coding on CodeChef"**  to the console.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T11:57:32.204Z  
+**Submitted:** 2026-11-18T11:57:50.305Z  
 
 ```java
 class Codechef
@@ -21,7 +21,6 @@ class Codechef
 	public static void main (String[] args)
 	{
         // Write your code here
-        // System.out.println("\"Learn Coding on CodeChef\"");
         System.out.println("Learn Coding on CodeChef");
 	}
 }
