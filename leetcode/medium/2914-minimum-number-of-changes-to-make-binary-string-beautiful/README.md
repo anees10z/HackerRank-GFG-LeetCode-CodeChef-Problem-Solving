@@ -18,7 +18,7 @@ Return  *the  **minimum**  number of changes required to make the string* `s`  *
  
 
 Original
-JavaScript
+Java
  **Example 1:** 
 
 ```
@@ -60,26 +60,44 @@ Explanation: We don't need to make any changes as the string "0000" is beautiful
 
 ## Solution
 
-**Language:** JavaScript  
-**Runtime:** 5 ms (beats 30.00%)  
-**Memory:** 63.4 MB (beats 10.00%)  
-**Submitted:** 2026-11-18T09:22:12.607Z  
+**Language:** Java  
+**Runtime:** 3 ms (beats 97.56%)  
+**Memory:** 46.2 MB (beats 59.76%)  
+**Submitted:** 2026-11-18T09:24:51.563Z  
 
-```js
-/**
- * @param {string} s
- * @return {number}
- */
-var minChanges = function (s) {
-    let n = s.length;
-    let count = 0;
-    for (let i = 1; i < n; i += 2) {
-        if (s.charAt(i) != s.charAt(i - 1)) {
-            count++;
+```java
+class Solution {
+    public int minChanges(String s) {
+        int len = s.length();
+        int count = 0;
+        for (int i = 1; i < len; i += 2) {
+            char curr1 = s.charAt(i);
+            char curr2 = s.charAt(i - 1);
+            if (curr1 != curr2)
+                count++;
         }
+        return count;
     }
-    return count;
-};
+}
+
+// class Solution {
+//     public int minChanges(String s) {
+//         int len = s.length();
+//         int count = 0;
+//         int i = 0;
+//         int j = 1;
+//         while (i < len) {
+//             char curr1 = s.charAt(i);
+//             char curr2 = s.charAt(j);
+//             if (curr1 != curr2) {
+//                 count++;
+//             }
+//             i += 2;
+//             j += 2;
+//         }
+//         return count;
+//     }
+// }
 ```
 
 ---
