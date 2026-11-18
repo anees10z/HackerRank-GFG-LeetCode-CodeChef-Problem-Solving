@@ -1,4 +1,4 @@
-# Java Stdin and Stdout I
+# Java If-Else
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -53,25 +53,40 @@ Print `Weird` if the number is weird; otherwise, print `Not Weird`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T14:56:17.252Z  
+**Submitted:** 2026-11-18T15:00:05.509Z  
 
 ```java
 import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
 import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+
 
 public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-    public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-        Scanner scanner = new Scanner(System.in);
-        int one = scanner.nextInt();
-        int two = scanner.nextInt();
-        int three = scanner.nextInt();
-        scanner.close();
-
-        System.out.println(one);
-        System.out.println(two);
-        System.out.println(three);
+        int N = Integer.parseInt(bufferedReader.readLine().trim());
+        
+        if((N&1) == 1){
+            System.out.println("Weird");
+        }else if(N>=2 && N<=5){
+            System.out.println("Not Weird");
+        }else if(N>=6 && N<=20){
+            System.out.println("Weird");
+        }else{
+            System.out.println("Not Weird");
+        }
+                
+        bufferedReader.close();
     }
 }
 
