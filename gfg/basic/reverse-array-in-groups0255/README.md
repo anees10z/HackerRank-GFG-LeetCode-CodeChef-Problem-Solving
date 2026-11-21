@@ -25,7 +25,7 @@ Explnation: Since k is greater than the number of remaining elements, the entire
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-21T12:42:36.497Z  
+**Submitted:** 2026-11-21T12:43:07.807Z  
 
 ```java
 class Solution {
