@@ -25,12 +25,12 @@ Explnation: Since k is greater than the number of remaining elements, the entire
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-21T12:42:07.699Z  
+**Submitted:** 2026-11-21T12:42:36.497Z  
 
 ```java
 class Solution {
 	public static void reverse(int[] arr, int l, int r) {
-		while (l<r) {
+		while (l < r) {
 			int temp = arr[l];
 			arr[l] = arr[r];
 			arr[r] = temp;
