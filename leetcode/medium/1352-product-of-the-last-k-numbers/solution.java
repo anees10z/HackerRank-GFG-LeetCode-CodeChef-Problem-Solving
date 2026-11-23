@@ -12,9 +12,8 @@ class ProductOfNumbers {
     public int getProduct(int k) {
         int len = list.size();
         int prod = 1;
-        for (int i = len - 1; i >= len - k; i--) {
+        for (int i = len - 1; i >= len - k; i--)
             prod *= list.get(i);
-        }
         return prod;
     }
 }
