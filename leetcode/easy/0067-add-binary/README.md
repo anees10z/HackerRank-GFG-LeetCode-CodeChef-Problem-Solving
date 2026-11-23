@@ -38,8 +38,8 @@ Output: "10101"
 
 **Language:** Java  
 **Runtime:** 3 ms (beats 15.10%)  
-**Memory:** 43.7 MB (beats 15.64%)  
-**Submitted:** 2026-11-23T03:46:44.300Z  
+**Memory:** 43.6 MB (beats 22.62%)  
+**Submitted:** 2026-11-23T03:47:25.926Z  
 
 ```java
 class Solution {
@@ -77,11 +77,7 @@ class Solution {
             } else if ((currA == '1' && currB == '0') && c == '1') {
                 res.insert(0, "0");
                 carry.setCharAt(0, '1');
-            }else if ((currA == '0' && currB == '1') && c == '1') {
-                res.insert(0, "0");
-                carry.setCharAt(0, '1');
-            } 
-            else if ((currA == '1' && currB == '1') && c == '0') {
+            } else if ((currA == '1' && currB == '1') && c == '0') {
                 res.insert(0, "0");
                 carry.setCharAt(0, '1');
             } else if ((currA == '1' && currB == '1') && c == '1') {
