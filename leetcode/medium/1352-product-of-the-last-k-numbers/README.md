@@ -57,9 +57,9 @@ productOfNumbers.getProduct(2); // return 32. The product of the last 2 numbers 
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2461 ms (beats 5.02%)  
-**Memory:** 83.8 MB (beats 82.35%)  
-**Submitted:** 2026-11-23T03:10:37.861Z  
+**Runtime:** 2298 ms (beats 5.02%)  
+**Memory:** 83.4 MB (beats 94.12%)  
+**Submitted:** 2026-11-23T17:44:41.603Z  
 
 ```java
 class ProductOfNumbers {
@@ -76,9 +76,8 @@ class ProductOfNumbers {
     public int getProduct(int k) {
         int len = list.size();
         int prod = 1;
-        for (int i = len - 1; i >= len - k; i--) {
+        for (int i = len - 1; i >= len - k; i--)
             prod *= list.get(i);
-        }
         return prod;
     }
 }
@@ -89,6 +88,7 @@ class ProductOfNumbers {
  * obj.add(num);
  * int param_2 = obj.getProduct(k);
  */
+
 ```
 
 ---
