@@ -39,7 +39,7 @@ Output: "10101"
 **Language:** Java  
 **Runtime:** 3 ms (beats 15.10%)  
 **Memory:** 43.6 MB (beats 22.62%)  
-**Submitted:** 2026-11-23T03:47:25.926Z  
+**Submitted:** 2026-11-23T03:47:56.777Z  
 
 ```java
 class Solution {
